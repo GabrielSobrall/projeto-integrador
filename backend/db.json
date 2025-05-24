@@ -17,12 +17,6 @@
       "nome": "Tenis Adidas",
       "preco": 299.99,
       "estoque": 30
-    },
-    {
-      "id": 0,
-      "nome": "Tenis Air Force 1",
-      "preco": 799.9,
-      "estoque": 21
     }
   ]
 }
