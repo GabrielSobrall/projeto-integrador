@@ -7,15 +7,27 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './categoria-carousel.component.html',
-  styleUrls: ['./categoria-carousel.component.css']
+  styleUrls: ['./categoria-carousel.component.css'],
 })
 export class CategoriaCarouselComponent {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
   categorias = [
-    { nome: 'MASCULINO', imagem: 'assets/img/masculino.jpg', link: '/produtostenis/masculino' },
-    { nome: 'FEMININO', imagem: 'assets/img/feminino.jpg', link: '/produtostenis/feminino' },
-    { nome: 'INFANTIL', imagem: 'assets/img/infantil.jpg', link: '/produtostenis/infantil' }
+    {
+      nome: 'MASCULINO',
+      imagem: 'assets/img/masculino.jpg',
+      link: '/produtostenis/masculino',
+    },
+    {
+      nome: 'FEMININO',
+      imagem: 'assets/img/feminino.jpg',
+      link: '/produtostenis/feminino',
+    },
+    {
+      nome: 'INFANTIL',
+      imagem: 'assets/img/infantil.jpg',
+      link: '/produtostenis/infantil',
+    },
   ];
 
   scrollEsquerda() {
