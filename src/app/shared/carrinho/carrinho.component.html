@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div *ngIf="showPopup" class="popup">
   🛒 Compra finalizada com sucesso!
 </div>
@@ -6,6 +7,11 @@
 
 
 <ng-container *ngIf="carrinho.length > 0; else carrinhoVazio">
+=======
+<h2>Meu Carrinho</h2>
+
+@if (carrinho.length > 0) {
+>>>>>>> 9d000a8830e2be11da7b26c03f1bf1496e449fb7
   <table>
     <thead>
       <tr>
@@ -17,6 +23,7 @@
       </tr>
     </thead>
     <tbody>
+<<<<<<< HEAD
       <tr *ngFor="let item of carrinho; trackBy: trackById">
         <td>{{ item.nome }}</td>
         <td>R$ {{ item.preco | number : "1.2-2" }}</td>
@@ -28,10 +35,26 @@
           <button (click)="removerItem(item.id!)">Remover</button>
         </td>
       </tr>
+=======
+      @for (item of carrinho; track item.id) {
+        <tr>
+          <td>{{ item.nome }}</td>
+          <td>R$ {{ item.preco }}</td>
+          <td>{{ item.quantidade }}</td>
+          <td>R$ {{ item.preco * item.quantidade }}</td>
+          <td>
+            <button (click)="alterarQuantidade(item.id, 1)">+</button>
+            <button (click)="alterarQuantidade(item.id, -1)">-</button>
+            <button (click)="removerItem(item.id)">Remover</button>
+          </td>
+        </tr>
+      }
+>>>>>>> 9d000a8830e2be11da7b26c03f1bf1496e449fb7
     </tbody>
   </table>
 
   <div class="total-section">
+<<<<<<< HEAD
     <p><strong>Total:</strong> R$ {{ total$ | async | number : "1.2-2" }}</p>
     <button class="finalizar-btn" (click)="finalizarCompra()">
       Finalizar Compra
@@ -42,3 +65,11 @@
 <ng-template #carrinhoVazio>
   <p>Seu carrinho está vazio.</p>
 </ng-template>
+=======
+    <p><strong>Total:</strong> R$ {{ total | number: '1.2-2' }}</p>
+    <button class="finalizar-btn" (click)="finalizarCompra()">Finalizar Compra</button>
+  </div>
+} @else {
+  <p>Seu carrinho está vazio.</p>
+}
+>>>>>>> 9d000a8830e2be11da7b26c03f1bf1496e449fb7

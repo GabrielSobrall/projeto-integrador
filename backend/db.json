@@ -23,6 +23,7 @@
       "imagem": "assets/img/tenis7.png"
     },
     {
+<<<<<<< HEAD
       "id": "6",
       "nome": "Tenis Air force",
       "descricao": "Clássico e versátil, o Nike Air Force 1 combina design atemporal com conforto incomparável. Com cabedal resistente, sola robusta e a famosa tecnologia Nike Air, é perfeito tanto para o dia a dia quanto para compor looks estilosos. Modelo em excelente estado (ou novo, se for o caso), ideal para quem busca qualidade e autenticidade.",
@@ -147,6 +148,12 @@
       "usuario": "admin",
       "senha": "1234",
       "tipo": "admin"
+=======
+      "id": "3",
+      "nome": "Tenis Adidas",
+      "preco": 299.99,
+      "estoque": 30
+>>>>>>> 9d000a8830e2be11da7b26c03f1bf1496e449fb7
     }
   ]
 }

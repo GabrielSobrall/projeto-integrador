@@ -14,8 +14,12 @@ table {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+<<<<<<< HEAD
 th,
 td {
+=======
+th, td {
+>>>>>>> 9d000a8830e2be11da7b26c03f1bf1496e449fb7
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -89,6 +93,7 @@ p {
   margin-top: 2rem;
   color: #555;
 }
+<<<<<<< HEAD
 
 .popup {
   position: fixed;
@@ -103,3 +108,5 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 9999;
 }
+=======
+>>>>>>> 9d000a8830e2be11da7b26c03f1bf1496e449fb7
